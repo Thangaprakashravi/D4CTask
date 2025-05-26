@@ -214,15 +214,15 @@ fun TopBar(currentPage: Int = 0) {
                 ) {
                     Box(
                         modifier = Modifier
-                            .size(80.dp)
-                            .clip(CircleShape)
+                            .size(90.dp)
+                            .clip(CircleShape).clickable {  }
                             .background(Color.Black),
                         contentAlignment = Alignment.Center
                     ) {
                         Image(
                             painter = painterResource(id = category.imageRes),
                             contentDescription = category.name,
-                            modifier = Modifier.size(50.dp),
+                            modifier = Modifier.size(70.dp),
                             contentScale = ContentScale.Crop
                         )
                     }
