@@ -46,12 +46,13 @@ fun ShopProductCard(product: Product) {
             .height(460.dp)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.grey_card_svg),
+            painter = painterResource(id = R.drawable.grey_card_svg),//grey background
             contentDescription = "Card Background",
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.fillMaxSize()
         )
 
+        // heart icon to show and clickable
         Box(
             modifier = Modifier
                 .align(Alignment.TopStart)
@@ -182,7 +183,7 @@ fun ShopProductCard(product: Product) {
                 )
             }
 
-            // Cart icon inside black shape
+            // Cart icon inside the circle
             Box(
                 modifier = Modifier
                     .align(Alignment.BottomEnd)
@@ -215,7 +216,7 @@ fun ProductListView() {
 }
 
 
-
+//The class to assign the value and easy to access
 data class Product(
     val title: String,
     val subtitle: String,

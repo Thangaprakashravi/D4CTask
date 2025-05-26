@@ -72,6 +72,7 @@ fun TopBar(currentPage: Int = 0) {
             .verticalScroll(rememberScrollState())
     ) {
 
+        //shop and back arrow
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -95,6 +96,7 @@ fun TopBar(currentPage: Int = 0) {
                 )
             }
 
+            // Icon and badge to show the top
             Row {
                 Icon(Icons.Default.Search, contentDescription = null, tint = Color.White)
                 Spacer(modifier = Modifier.width(12.dp))
@@ -128,6 +130,7 @@ fun TopBar(currentPage: Int = 0) {
             }
         }
 
+        //Banner the black_card
         Box(
             modifier = Modifier
                 .fillMaxWidth().width(100.dp)
@@ -255,16 +258,17 @@ fun TopBar(currentPage: Int = 0) {
 
         }
 
-        ProductListView()
+        ProductListView() //ShopProductCard
 
     }
 }
 
+// Horizontal image to show
 data class Category(val name: String, val imageRes: Int)
 val Categories = listOf(
     Category("Cleaners",R.drawable.product_image),
-    Category("Toner",R.drawable.categorysample),
-    Category("Serums",R.drawable.product_image),
+    Category("glow",R.drawable.categorysample),
+    Category("afterglow",R.drawable.product_image),
     Category("Moisturisers",R.drawable.categorysample),
     Category("Suncream",R.drawable.product_image)
 )
