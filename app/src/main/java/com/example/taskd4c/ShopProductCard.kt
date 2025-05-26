@@ -52,7 +52,7 @@ fun ShopProductCard(product: Product) {
             modifier = Modifier.fillMaxSize()
         )
 
-        // heart icon to show and clickable
+        // heart icon to show and clickables
         Box(
             modifier = Modifier
                 .align(Alignment.TopStart)

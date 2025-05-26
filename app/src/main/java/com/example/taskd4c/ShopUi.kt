@@ -258,7 +258,7 @@ fun TopBar(currentPage: Int = 0) {
 
         }
 
-        ProductListView() //ShopProductCard
+        ProductListView() //ShopProductCards
 
     }
 }
