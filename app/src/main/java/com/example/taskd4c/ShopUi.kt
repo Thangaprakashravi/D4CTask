@@ -104,7 +104,7 @@ fun TopBar(currentPage: Int = 0) {
                     badge = {
                         Badge(
                             modifier = Modifier.align(Alignment.BottomEnd).offset(y = 10.dp),
-                            containerColor = Color(0xFFB5F74E), contentColor = Color.White, content = {
+                            containerColor = Color(0xFFB5F74E), contentColor = Color.Black, content = {
                                 Text("5")
                             }
                         )
@@ -118,7 +118,7 @@ fun TopBar(currentPage: Int = 0) {
                     badge = {
                         Badge(
                             modifier = Modifier.align(Alignment.BottomEnd).offset(y = 10.dp),
-                            containerColor = Color(0xFFB5F74E), contentColor = Color.White, content = {
+                            containerColor = Color(0xFFB5F74E), contentColor = Color.Black, content = {
                                 Text("3")
                             }
                         )
